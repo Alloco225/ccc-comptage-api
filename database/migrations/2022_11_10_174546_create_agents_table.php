@@ -36,7 +36,6 @@ return new class extends Migration
             $table->string('date_modification')->nullable();
             $table->string('date_suppression')->nullable();
             $table->string('user_id')->nullable();
-
             $table->string('piece_type')->nullable();
             $table->string('piece_numero')->nullable();
             $table->string('piece_recto')->nullable();
