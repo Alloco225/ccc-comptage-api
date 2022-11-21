@@ -91,6 +91,18 @@ return [
             'prefix_indexes' => true,
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+            // 'driver' => 'sqlsrv',
+            // 'driver' => 'MSSQL',
+        ],
+        'mssql' => [
+            'driver' => 'sqlsrv',
+            'host' => '162.215.230.14',
+            'port' => '1433',
+            'database' => 'db_cafecacao9',
+            'username' => 'rootadmin',
+            'password' => 'Knyg79@7',
+            'charset' => 'utf8',
+            'prefix' => '',
         ],
 
     ],

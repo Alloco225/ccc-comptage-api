@@ -2,6 +2,7 @@
 
 use App\Models\Comptage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::resource('comptage', ComptageAPIController::class);
 Route::get('comptage', function(){
-    $data = Comptage::all();
+    // $data = Comptage::all();
+    $data = DB::table('tb_delegation')->get();
+    // dd($data);
     return response()->json($data);
 });
